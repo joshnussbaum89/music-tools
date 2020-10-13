@@ -2,10 +2,22 @@
 /*              Typography                       */
 /* ============================================= */
 
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&family=Nosifer&family=Pirata+One&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 
-h1 {
-    color: red;
+body {
+    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    font-family: 'Nosifer', cursive;
+    font-family: 'Pirata One', cursive;
+}
+
+.title {
+    font-size: 5rem;
+    color: $dark-text;
+    padding: 1rem;
+    margin: 0;
 }

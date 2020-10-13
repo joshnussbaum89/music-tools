@@ -1,0 +1,21 @@
+/* ============================================= */
+/*              About                            */
+/* ============================================= */
+
+.tools {
+    height: 100vh;
+    &-heading {
+        text-align: center;
+        font-size: 3rem;
+        padding: 2.5rem 0;
+    }
+}
+
+.tools-metronome {
+    margin: 1rem auto;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    box-shadow: 0 0 2rem black;
+    background-color: $ivory;
+}
