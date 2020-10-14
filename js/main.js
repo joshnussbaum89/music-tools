@@ -14,13 +14,15 @@ setBPM.addEventListener('keyup', (event) => {
 
     if (!isNaN(eventTargetVal) && Number.isInteger(+eventTargetVal)) {
         setTempoBtn.addEventListener('click', () => {
-
             if (eventTargetVal) {
                 printTempo.innerHTML = `<h1>${eventTargetVal} BPM</h1>`;
             } else {
                 printTempo.innerHTML = `<p>Please enter a number</p>`;
             }
-
+        });
+    } else {
+        setTempoBtn.addEventListener('click', () => {
+            printTempo.innerHTML = `<p>Please enter a number</p>`;
         });
     }
 
