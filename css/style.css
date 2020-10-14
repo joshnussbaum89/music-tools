@@ -349,6 +349,7 @@ body {
   font-family: "Libre Barcode 39 Extended Text", cursive;
   font-family: "Nosifer", cursive;
   font-family: "Pirata One", cursive;
+  font-size: 1.5rem;
 }
 
 .title {
@@ -356,6 +357,10 @@ body {
   color: #333333;
   padding: 1rem;
   margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 /* ============================================= */
@@ -366,17 +371,46 @@ body {
 }
 .tools-heading {
   text-align: center;
-  font-size: 3rem;
-  padding: 2.5rem 0;
+  font-size: 4rem;
+  padding: 2.5rem 0 0;
+  margin-bottom: 1rem;
 }
 
 .tools-metronome {
-  margin: 1rem auto;
-  height: 600px;
-  width: 600px;
-  border-radius: 50%;
-  box-shadow: 0 0 2rem black;
-  background-color: ivory;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 50%;
+  margin: 1rem auto 4rem;
+  padding: 2rem;
+  height: 400px;
+  width: 60%;
+  border-radius: 25px;
+  box-shadow: inset 0 0 1.5rem #333333, 1rem 1rem 1rem #333333;
+  background-color: #1F5C3A;
+}
+.tools-metronome-tempo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  width: 40%;
+}
+
+.set-BPM {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.set-tempo-btn {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: darkorange;
+  width: 60%;
+  font-size: 1rem;
+  border-radius: 10px;
 }
 
 /* ============================================= */
@@ -400,5 +434,11 @@ header {
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
+@media (min-width: 768px) {
+  .set-tempo-btn {
+    width: 50%;
+    font-size: 1.2rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

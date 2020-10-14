@@ -6,16 +6,42 @@
     height: 100vh;
     &-heading {
         text-align: center;
-        font-size: 3rem;
-        padding: 2.5rem 0;
+        font-size: 4rem;
+        padding: 2.5rem 0 0;
+        margin-bottom: 1rem;
     }
 }
 
 .tools-metronome {
-    margin: 1rem auto;
-    height: 600px;
-    width: 600px;
-    border-radius: 50%;
-    box-shadow: 0 0 2rem black;
-    background-color: $ivory;
+    @include flexy($dir: column, $just: start);
+    width: 50%;
+    margin: 1rem auto 4rem;
+    padding: 2rem;
+    height: 400px;
+    width: 60%;
+    border-radius: 25px;
+    box-shadow: inset 0 0 1.5rem $dark-text,
+                1rem 1rem 1rem $dark-text;
+    background-color: #1F5C3A;
+    &-tempo {
+        @include flexy($dir: column, $just: space-around);
+        padding: 10px;
+        width: 40%;
+    }
 }
+
+.set-BPM {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.set-tempo-btn {
+    @include flexy($just: center);
+    padding: 1rem 2rem;
+    background-color: darkorange;
+    width: 60%;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+

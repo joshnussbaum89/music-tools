@@ -13,6 +13,7 @@ body {
     font-family: 'Libre Barcode 39 Extended Text', cursive;
     font-family: 'Nosifer', cursive;
     font-family: 'Pirata One', cursive;
+    font-size: 1.5rem;
 }
 
 .title {
@@ -20,4 +21,8 @@ body {
     color: $dark-text;
     padding: 1rem;
     margin: 0;
+}
+
+h3 {
+    font-size: 2rem;
 }
