@@ -398,12 +398,23 @@ h3 {
 }
 
 .set-BPM {
+  color: #f22f46;
   margin: 1rem 0;
   padding: 1rem;
   border-radius: 10px;
 }
 
 .set-tempo-btn {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: darkorange;
+  width: 60%;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.clear-tempo-btn {
   display: flex;
   justify-content: center;
   padding: 1rem 2rem;
@@ -436,6 +447,11 @@ header {
 /* ============================================= */
 @media (min-width: 768px) {
   .set-tempo-btn {
+    width: 50%;
+    font-size: 1.2rem;
+  }
+
+  .clear-tempo-btn {
     width: 50%;
     font-size: 1.2rem;
   }

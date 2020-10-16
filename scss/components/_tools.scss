@@ -31,12 +31,22 @@
 }
 
 .set-BPM {
+    color: $hot-red;
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 10px;
 }
 
 .set-tempo-btn {
+    @include flexy($just: center);
+    padding: 1rem 2rem;
+    background-color: darkorange;
+    width: 60%;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.clear-tempo-btn {
     @include flexy($just: center);
     padding: 1rem 2rem;
     background-color: darkorange;
