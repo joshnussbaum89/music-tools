@@ -46,7 +46,7 @@ function myPlay() {
 // function to turn user input (BPM) to seconds.  Use that "millisecond" data to set click sound interval
 function BPMToMilliseconds(BPM) {
   const BPMToNumber = parseInt(BPM);
-
+  console.log(BPMToNumber);
   // set tempo and call myPlay function
   if (BPMToNumber > 0) {
     const milliseconds = 60000 / BPM;
@@ -56,8 +56,3 @@ function BPMToMilliseconds(BPM) {
     }, milliseconds);
   }
 };
-
-
-
-
-
