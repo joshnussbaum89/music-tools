@@ -38,7 +38,7 @@ clearBPM.addEventListener("click", () => {
 });
 
 // function to produce click sound
-function myPlay() {
+function playClick() {
   const audio = new Audio("sounds/click.mp3");
   audio.play();
 }
@@ -47,11 +47,11 @@ function myPlay() {
 function BPMToMilliseconds(BPM) {
   const BPMToNumber = parseInt(BPM);
   clearInterval(clickTimer);
-  // set tempo and call myPlay function
+  // set tempo and call playClick function
   if (BPMToNumber !== 0) {
     const milliseconds = 60000 / BPM;
     clickTimer = setInterval(() => {
-      myPlay();
+      playClick();
     }, milliseconds);
   }
 };
