@@ -1,3 +1,25 @@
 /* ============================================= */
 /*              Button                           */
 /* ============================================= */
+
+.tempo-buttons {
+    @include flexy($just: space-around);
+}
+
+.set-tempo-btn {
+    @include flexy($just: center);
+    padding: 1rem 2rem;
+    background-color: darkorange;
+    width: 40%;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.clear-tempo-btn {
+    @include flexy($just: center);
+    padding: 1rem 2rem;
+    background-color: darkorange;
+    width: 40%;
+    font-size: 1rem;
+    border-radius: 10px;
+}

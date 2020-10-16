@@ -4,6 +4,11 @@
 
 // Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&family=Nosifer&family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    letter-spacing: .1rem;
+}
 
 html {
     scroll-behavior: smooth;

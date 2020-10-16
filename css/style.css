@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&family=Nosifer&family=Pirata+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -341,6 +342,10 @@ template {
 /* ============================================= */
 /*              Typography                       */
 /* ============================================= */
+* {
+  letter-spacing: 0.1rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -392,35 +397,18 @@ h3 {
 .tools-metronome-tempo {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
   padding: 10px;
-  width: 40%;
+  width: 50%;
 }
 
 .set-BPM {
-  color: #f22f46;
+  font-family: "VT323", monospace;
+  background-color: #333333;
+  color: white;
   margin: 1rem 0;
   padding: 1rem;
-  border-radius: 10px;
-}
-
-.set-tempo-btn {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 2rem;
-  background-color: darkorange;
-  width: 60%;
-  font-size: 1rem;
-  border-radius: 10px;
-}
-
-.clear-tempo-btn {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 2rem;
-  background-color: darkorange;
-  width: 60%;
-  font-size: 1rem;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -439,22 +427,36 @@ header {
 /* ============================================= */
 /*              Button                           */
 /* ============================================= */
+.tempo-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.set-tempo-btn {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: darkorange;
+  width: 40%;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.clear-tempo-btn {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: darkorange;
+  width: 40%;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
 /* ============================================= */
 /*              Images                           */
 /* ============================================= */
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
-@media (min-width: 768px) {
-  .set-tempo-btn {
-    width: 50%;
-    font-size: 1.2rem;
-  }
-
-  .clear-tempo-btn {
-    width: 50%;
-    font-size: 1.2rem;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */

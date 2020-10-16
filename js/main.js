@@ -30,10 +30,10 @@ setBPM.addEventListener("keyup", (event) => {
 
 });
 
-//Clear tempo
+// clear tempo
 clearBPM.addEventListener("click", () => {
   clearInterval(clickTimer);
-  setBPM.value = 'enter new tempo here...';
+  setBPM.value = 'enter tempo...';
   printTempo.innerHTML = `<p>Please enter a number</p>`;
 });
 
@@ -47,7 +47,7 @@ function myPlay() {
 function BPMToMilliseconds(BPM) {
   const BPMToNumber = parseInt(BPM);
 
-  // function to set tempo and call myPlay function
+  // set tempo and call myPlay function
   if (BPMToNumber > 0) {
     const milliseconds = 60000 / BPM;
     clearInterval(clickTimer);

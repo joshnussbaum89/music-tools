@@ -24,34 +24,18 @@
                 1rem 1rem 1rem $dark-text;
     background-color: #1F5C3A;
     &-tempo {
-        @include flexy($dir: column, $just: space-around);
+        @include flexy($dir: column, $align: center);
         padding: 10px;
-        width: 40%;
+        width: 50%;
     }
 }
 
 .set-BPM {
-    color: $hot-red;
+    font-family: 'VT323', monospace;
+    background-color: $dark-text;
+    color: white;
     margin: 1rem 0;
     padding: 1rem;
+    width: 100%;
     border-radius: 10px;
 }
-
-.set-tempo-btn {
-    @include flexy($just: center);
-    padding: 1rem 2rem;
-    background-color: darkorange;
-    width: 60%;
-    font-size: 1rem;
-    border-radius: 10px;
-}
-
-.clear-tempo-btn {
-    @include flexy($just: center);
-    padding: 1rem 2rem;
-    background-color: darkorange;
-    width: 60%;
-    font-size: 1rem;
-    border-radius: 10px;
-}
-
