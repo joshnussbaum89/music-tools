@@ -478,19 +478,11 @@ header {
   justify-content: space-around;
 }
 
-.set-tempo-btn {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 2rem;
-  background-color: darkorange;
-  width: 40%;
-  font-size: 1rem;
-  border-radius: 10px;
-}
-
+.set-tempo-btn,
 .clear-tempo-btn {
   display: flex;
   justify-content: center;
+  cursor: pointer;
   padding: 1rem 2rem;
   background-color: darkorange;
   width: 40%;
