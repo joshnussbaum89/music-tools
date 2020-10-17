@@ -24,6 +24,7 @@ setBPM.addEventListener("keyup", (event) => {
     });
   } else {
     setTempoBtn.addEventListener("click", () => {
+      setBPM.setAttribute('placeholder', 'enter tempo...');
       printTempo.innerHTML = `<p>Please enter a number</p>`;
     });
   }
@@ -33,7 +34,8 @@ setBPM.addEventListener("keyup", (event) => {
 // clear tempo
 clearBPM.addEventListener("click", () => {
   clearInterval(clickTimer);
-  setBPM.value = 'enter tempo...';
+  setBPM.value = '';
+  setBPM.setAttribute('placeholder', 'enter tempo...');
   printTempo.innerHTML = `<p>Please enter a number</p>`;
 });
 
@@ -55,3 +57,44 @@ function BPMToMilliseconds(BPM) {
     }, milliseconds);
   }
 };
+
+// function to play string
+function playString(url) {
+  const string = new Audio(url);
+  string.play();
+}
+
+// Guitar 
+const guitarSoundhole = document.querySelector('.guitar-soundhole');
+
+// plays correct string based on user clicks
+guitarSoundhole.addEventListener('click', (event) => {
+  const targetString = event.target;
+  const lowEString = document.querySelector('.lowEString');
+  const aString = document.querySelector('.aString');
+  const dString = document.querySelector('.dString');
+  const gString = document.querySelector('.gString');
+  const bString = document.querySelector('.bString');
+  const hiEString = document.querySelector('.hiEString');
+
+  switch (targetString) {
+    case lowEString:
+      playString("sounds/lowE.mp3");
+      break;
+    case aString:
+      playString("sounds/A.mp3");
+      break;
+    case dString:
+      playString("sounds/D.mp3");
+      break;
+    case gString:
+      playString("sounds/G.mp3");
+      break;
+    case bString:
+      playString("sounds/B.mp3");
+      break;
+    case hiEString:
+      playString("sounds/hiE.mp3");
+      break;
+  }
+})

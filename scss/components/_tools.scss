@@ -32,10 +32,52 @@
 
 .set-BPM {
     font-family: 'VT323', monospace;
+    font-size: 1.6rem;
     background-color: $dark-text;
-    color: white;
+    color: $light-mint-green;
     margin: 1rem 0;
     padding: 1rem;
     width: 100%;
     border-radius: 10px;
 }
+
+.guitar-soundhole {
+    margin: 6rem 3rem;
+    width: 150px;
+    height: 150px;
+    background-color: $dark-text;
+    border-radius: 50%;
+    padding: 60px;
+}
+
+.lowEString,
+.aString,
+.dString,
+.gString,
+.bString,
+.hiEString {
+    margin-bottom: 1rem;
+    height: 4px;
+    width: 70vw;
+    cursor: pointer;
+}
+
+.lowEString {
+    background-color: $button-error;
+}
+.aString {
+    background-color: $button-blue;
+}
+.dString {
+    background-color: $mint-green;
+}
+.gString {
+    background-color: $mountain-bold;
+}
+.bString {
+    background-color: $rich-purple;
+}
+.hiEString {
+    background-color: $mario;
+}
+

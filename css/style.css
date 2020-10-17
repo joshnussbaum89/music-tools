@@ -404,12 +404,58 @@ h3 {
 
 .set-BPM {
   font-family: "VT323", monospace;
+  font-size: 1.6rem;
   background-color: #333333;
-  color: white;
+  color: #80e8d1;
   margin: 1rem 0;
   padding: 1rem;
   width: 100%;
   border-radius: 10px;
+}
+
+.guitar-soundhole {
+  margin: 6rem 3rem;
+  width: 150px;
+  height: 150px;
+  background-color: #333333;
+  border-radius: 50%;
+  padding: 60px;
+}
+
+.lowEString,
+.aString,
+.dString,
+.gString,
+.bString,
+.hiEString {
+  margin-bottom: 1rem;
+  height: 4px;
+  width: 70vw;
+  cursor: pointer;
+}
+
+.lowEString {
+  background-color: #e4757a;
+}
+
+.aString {
+  background-color: #4a89ca;
+}
+
+.dString {
+  background-color: #88d9a0;
+}
+
+.gString {
+  background-color: #a33830;
+}
+
+.bString {
+  background-color: #4900EB;
+}
+
+.hiEString {
+  background-color: #5db1ad;
 }
 
 /* ============================================= */
